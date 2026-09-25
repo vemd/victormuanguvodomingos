@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Muanguvo Domingos — Estudante de Economia</title>
+  <meta name="description" content="Victor Muanguvo Domingos — estudante de Ciências Econômicas na Unisinos, pesquisador estagiário no Núcleo de Excelência CEI (Competitividade, Economia Regional e Internacional) e Embaixador Estudantil do Google 2026." />
+  <meta name="author" content="Victor Muanguvo Domingos" />
+  <meta name="theme-color" content="#1f2838" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Victor Muanguvo Domingos — Estudante de Economia" />
+  <meta property="og:description" content="Estudante de Ciências Econômicas na Unisinos, pesquisador no Núcleo de Excelência CEI (Competitividade, Economia Regional e Internacional) e Embaixador Estudantil do Google 2026." />
+  <meta property="og:image" content="assets/victor.jpg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ABERTURA -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__name">
+      <span class="loader__line"><span>Victor</span></span>
+      <span class="loader__line"><span><em>Muanguvo</em></span></span>
+      <span class="loader__line"><span>Domingos</span></span>
+    </div>
+    <div class="loader__foot">
+      <span>Estudante de Economia · Pesquisador · Embaixador Google</span>
+      <span><span id="loaderCount">0</span>%</span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label" id="cursorLabel"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- NAVEGAÇÃO -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">Victor <em>Muanguvo</em> Domingos</a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#google">Google</a>
+      <a href="#agora">Pesquisa</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#certificacoes">Certificações</a>
+    </nav>
+    <a href="#contato" class="nav__cta">Contato <span>↗</span></a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu">
+    <nav aria-label="Menu">
+      <a href="#sobre"><small>01</small>Sobre</a>
+      <a href="#google"><small>02</small>Google</a>
+      <a href="#agora"><small>03</small>Pesquisa</a>
+      <a href="#trajetoria"><small>04</small>Trajetória</a>
+      <a href="#certificacoes"><small>05</small>Certificações</a>
+      <a href="#contato"><small>06</small>Contato</a>
+    </nav>
+    <ul class="menu__social icon-row icon-row--light">
+      <li><a href="https://www.linkedin.com/in/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="LinkedIn"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Instagram"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a></li>
+      <li><a href="https://youtube.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="YouTube"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/@victormuanguvodomingos" target="_blank" rel="noopener me" aria-label="TikTok"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg></a></li>
+      <li><a href="https://www.threads.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Threads"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/></svg></a></li>
+      <li><a href="https://www.facebook.com/share/1DRWDX1MSJ/" target="_blank" rel="noopener me" aria-label="Facebook"><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__visual" id="cityWrap" data-cursor="Explore">
+        <canvas id="city" aria-label="Modelo 3D interativo de uma região econômica"></canvas>
+        <div class="city-tag" id="cityTag"><span class="city-tag__dot"></span>Economia regional</div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__meta">
+          <span class="reveal-up">São Leopoldo, RS — 2026</span>
+          <a href="#google" class="hero__badge reveal-up"><span class="g-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Embaixador Estudantil do Google 2026</a>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span>Victor</span></span>
+          <span class="line line--indent"><span><em>Muanguvo</em></span></span>
+          <span class="line"><span>Domingos</span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lead reveal-up">
+            Estudante de Ciências Econômicas na Unisinos, pesquisador estagiário no <em>Núcleo de Excelência CEI</em> e Embaixador Estudantil do Google.
+          </p>
+          <a href="#sobre" class="hero__scroll reveal-up">
+            <span class="hero__scroll-line"></span>
+            Role para explorar
+          </a>
+        </div>
+      </div>
+
+      <p class="hero__fig reveal-up">Fig. 01 — Uma região em três dimensões. <span>Passe o cursor sobre o modelo.</span></p>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <p class="label">(01) — Sobre</p>
+        <p class="about__kicker">Uma frase que nunca esqueço</p>
+        <blockquote class="about__statement">
+          <p data-words>“As ideias não surgem prontas. Elas só se tornam claras à medida que você trabalha nelas. Você só precisa começar.”</p>
+          <footer class="about__cite">— Mark Zuckerberg</footer>
+        </blockquote>
+
+        <div class="about__grid">
+          <figure class="about__photo">
+            <div class="portrait" data-tilt>
+              <svg class="portrait__orbit" viewBox="0 0 200 200" aria-hidden="true">
+                <circle class="portrait__orbit-path" cx="100" cy="100" r="98" pathLength="1" />
+                <g class="portrait__orbit-spin"><circle class="portrait__orbit-dot" cx="100" cy="2" r="2.6" /></g>
+              </svg>
+
+              <div class="portrait__reveal">
+                <div class="portrait__frame">
+                  <img src="assets/victor.jpg" alt="Retrato de Victor Muanguvo Domingos" width="1060" height="850" />
+                </div>
+              </div>
+
+              <svg class="portrait__badge" viewBox="0 0 120 120" aria-hidden="true">
+                <defs><path id="badgeCircle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
+                <circle cx="60" cy="60" r="58" class="portrait__badge-bg" />
+                <g class="portrait__badge-spin">
+                  <text><textPath href="#badgeCircle" startOffset="0" textLength="270" lengthAdjust="spacing">Estudante de Economia · Pesquisador · Google · </textPath></text>
+                </g>
+                <path class="portrait__badge-star" d="M60 49 L62.6 57.4 L71 60 L62.6 62.6 L60 71 L57.4 62.6 L49 60 L57.4 57.4 Z" />
+              </svg>
+            </div>
+
+            <figcaption class="portrait__caption">
+              <span class="portrait__name">Victor <em>Muanguvo</em> Domingos</span>
+              <span class="portrait__line" aria-hidden="true"></span>
+              <span class="portrait__role">Estudante de Economia · Unisinos</span>
+            </figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p class="about__intro fade">
+              Sou <strong>Victor Muanguvo Domingos</strong>, natural de Luanda, Angola, e estudante de Ciências Econômicas na Universidade do Vale do Rio dos Sinos (Unisinos). Minha base vem da Contabilidade e Gestão, e hoje a minha atenção está na economia, na análise de dados e na inteligência artificial.
+            </p>
+            <p class="fade">
+              Aplico conhecimentos de contabilidade, gestão e tecnologia para apoiar a análise de informações e a tomada de decisões. Trabalho de forma responsável, colaborativa e orientada a resultados, sempre aprimorando as minhas habilidades técnicas e profissionais.
+            </p>
+
+            <dl class="facts">
+              <div class="fade"><dt>Formação</dt><dd>Ciências Econômicas</dd></div>
+              <div class="fade"><dt>Instituição</dt><dd>Unisinos</dd></div>
+              <div class="fade"><dt>Nacionalidade</dt><dd>Angolana</dd></div>
+              <div class="fade"><dt>Residência</dt><dd>São Leopoldo, RS</dd></div>
+            </dl>
+
+            <a href="assets/curriculo-victor-domingos.jpg" download class="link-arrow fade" data-magnetic>
+              Baixar currículo <span>↓</span>
+            </a>
+
+            <ul class="icon-row fade" aria-label="Redes sociais">
+              <li><a href="https://www.linkedin.com/in/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="LinkedIn" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a></li>
+              <li><a href="https://www.instagram.com/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Instagram" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a></li>
+              <li><a href="https://youtube.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="YouTube" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg></a></li>
+              <li><a href="https://www.tiktok.com/@victormuanguvodomingos" target="_blank" rel="noopener me" aria-label="TikTok" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg></a></li>
+              <li><a href="https://www.threads.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Threads" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/></svg></a></li>
+              <li><a href="https://www.facebook.com/share/1DRWDX1MSJ/" target="_blank" rel="noopener me" aria-label="Facebook" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE: EMBAIXADOR GOOGLE -->
+    <section class="google" id="google">
+      <div class="container">
+        <div class="google__head">
+          <p class="label">(02) — Destaque</p>
+          <p class="google__edition"><span class="g-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Edição 2026</p>
+        </div>
+
+        <div class="google__grid">
+          <div class="google__intro">
+            <h2 class="google__title">
+              <span class="line"><span>Embaixador</span></span>
+              <span class="line"><span>Estudantil do</span></span>
+              <span class="line"><span><em>Google.</em></span></span>
+            </h2>
+            <p class="google__lead fade">
+              Fui selecionado para o <strong>Programa Embaixadores Estudantis do Google 2026</strong>, promovido pela Amplifica, parceira do Google for Education, que reúne lideranças universitárias em inteligência artificial em todo o Brasil.
+            </p>
+            <p class="fade">
+              No programa, participo de encontros, masterclasses e sessões práticas com o Google Gemini, e compartilho práticas de IA aplicadas à rotina acadêmica.
+            </p>
+            <dl class="google__stats fade">
+              <div><dt>Encontros</dt><dd data-count="6">6</dd></div>
+              <div><dt>Ferramenta</dt><dd>Gemini</dd></div>
+              <div><dt>Foco</dt><dd>IA na universidade</dd></div>
+            </dl>
+          </div>
+
+          <div class="deck-wrap">
+            <div class="deck" id="deck" data-cursor="Próximo" role="button" tabindex="0" aria-label="Galeria do programa Embaixadores Estudantis do Google. Clique para ver a próxima imagem.">
+              <figure class="deck__card" style="--bg: #eef2f9"><img src="assets/google-selecionado.jpg" alt="Card: selecionado para o Programa de Embaixadores Estudantis do Google 2026" /></figure>
+              <figure class="deck__card" style="--bg: #eef1f8"><img src="assets/google-dica-prompt.jpg" alt="Card com a dica de prompt do Google Gemini de Victor Muanguvo Domingos" /></figure>
+              <figure class="deck__card" style="--bg: #000"><img src="assets/google-dica-capa.jpg" alt="Card: Minha dica de prompt — Embaixadores Estudantis do Google" /></figure>
+              <figure class="deck__card" style="--bg: #000"><img src="assets/google-programa.jpg" alt="Identidade visual do programa Embaixadores Estudantis do Google" /></figure>
+            </div>
+            <p class="deck__hint"><span id="deckIndex">01</span> / 04 — clique para ver a próxima</p>
+          </div>
+        </div>
+
+        <div class="prompt fade">
+          <div class="prompt__head">
+            <p class="label">Minha dica de prompt · Google Gemini</p>
+            <button class="prompt__copy" id="copyPrompt" data-magnetic>Copiar prompt</button>
+          </div>
+          <blockquote class="prompt__text" id="promptText">
+            Atue como meu professor e tutor especialista nesta área: a cada slide ou material de aula que eu enviar, explique detalhadamente todo o conteúdo presente nele de forma clara, didática e em linguagem simples, usando exemplos práticos do cotidiano. Ao final de cada explicação, elabore perguntas de fixação para checar se realmente compreendi o assunto e aguarde minhas respostas para corrigi-las e apontar eventuais melhorias.
+          </blockquote>
+        </div>
+
+        <div class="sessions">
+          <p class="label">Encontros do programa</p>
+          <ol class="sessions__list">
+            <li class="session">
+              <time>21 ago</time>
+              <div><h3>Encontro de Boas-Vindas</h3><p>Abertura oficial do programa para lideranças universitárias em IA no Brasil.</p></div>
+              <span class="session__dur">1 h</span>
+            </li>
+            <li class="session">
+              <time>28 ago</time>
+              <div><h3>Sessão Gemini: Study Notebook</h3><p>Práticas com o Study Notebook do Gemini na rotina acadêmica.</p></div>
+              <span class="session__dur">30 min</span>
+            </li>
+            <li class="session">
+              <time>04 set</time>
+              <div><h3>Gemini Canvas com banco de dados</h3><p>Aplicações do Gemini Canvas na vida universitária.</p></div>
+              <span class="session__dur">30 min</span>
+            </li>
+            <li class="session">
+              <time>10 set</time>
+              <div><h3>Sessão de Google Gemini 3</h3><p>Ferramentas do Gemini aplicadas à rotina de estudos.</p></div>
+              <span class="session__dur">30 min</span>
+            </li>
+            <li class="session">
+              <time>16 set</time>
+              <div><h3>Masterclass #1 com Otávio Pompeu</h3><p>Google Gemini para criação de conteúdo e posicionamento digital.</p></div>
+              <span class="session__dur">1 h</span>
+            </li>
+            <li class="session">
+              <time>22 set</time>
+              <div><h3>Conversa com Googler: Bernardo Barlach</h3><p>Carreiras e desenvolvimento profissional na era da IA.</p></div>
+              <span class="session__dur">45 min</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- PESQUISA / ATUALMENTE -->
+    <section class="now" id="agora">
+      <div class="container">
+        <div class="now__head">
+          <p class="label label--light">(03) — Pesquisa</p>
+          <p class="now__live"><i></i> Atualmente · 2026</p>
+        </div>
+
+        <h2 class="now__title">
+          <span class="line"><span>Pesquisador</span></span>
+          <span class="line line--indent"><span><em>Estagiário</em></span></span>
+        </h2>
+
+        <div class="now__grid">
+          <div class="fade">
+            <p class="now__k">Núcleo</p>
+            <p class="now__v">Núcleo de Excelência CEI — Competitividade, Economia Regional e Internacional</p>
+          </div>
+          <div class="fade">
+            <p class="now__k">Instituição</p>
+            <p class="now__v">Universidade do Vale do Rio dos Sinos — Unisinos</p>
+          </div>
+          <div class="fade">
+            <p class="now__k">Atuação</p>
+            <p class="now__v now__v--small">Apoio a projetos de pesquisa sobre competitividade e economia regional e internacional, com levantamento, organização e análise de dados econômicos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Competitividade</span><i>✦</i><span><em>Economia Regional</em></span><i>✦</i><span>Economia Internacional</span><i>✦</i><span>Pesquisa Aplicada</span><i>✦</i><span><em>Análise de Dados</em></span><i>✦</i><span>Inteligência Artificial</span><i>✦</i>
+          <span>Competitividade</span><i>✦</i><span><em>Economia Regional</em></span><i>✦</i><span>Economia Internacional</span><i>✦</i><span>Pesquisa Aplicada</span><i>✦</i><span><em>Análise de Dados</em></span><i>✦</i><span>Inteligência Artificial</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA (rolagem horizontal) -->
+    <section class="path" id="trajetoria">
+      <div class="path__pin">
+        <div class="container path__head">
+          <p class="label">(04) — Trajetória</p>
+          <h2 class="section-title">Um caminho construído <em>passo a passo.</em></h2>
+        </div>
+
+        <div class="path__viewport">
+          <div class="path__track" id="pathTrack">
+            <article class="stop">
+              <p class="stop__year">2019</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>2019 — 2023</span><span>Formação</span></p>
+                <h3>Contabilidade e Gestão</h3>
+                <p class="stop__org">Ensino Médio Técnico · Instituto Politécnico de Administração e Serviço Nº 5144 “Zango Zero” (IPAS)</p>
+                <p>A base de tudo: contabilidade, gestão e administração, o ponto de partida da minha trajetória na economia.</p>
+              </div>
+            </article>
+
+            <article class="stop">
+              <p class="stop__year">2022</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>nov 2022 — fev 2023</span><span>Experiência</span></p>
+                <h3>Assistente de Contabilidade</h3>
+                <p class="stop__org">Hutombelu — Consultoria e Contabilidade · Luanda</p>
+                <p>240 horas de estágio supervisionado, com média final de 19 valores. Documentos contabilísticos, lançamentos de abertura e factos patrimoniais, apuramento de impostos (IVA, IRT, IPU, IAC, IS), folha de salário e fecho de contas.</p>
+              </div>
+            </article>
+
+            <article class="stop">
+              <p class="stop__year">2023</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>2023 — 2025</span><span>Voluntariado</span></p>
+                <h3>Estudante Voluntário</h3>
+                <p class="stop__org">Fundação BAI</p>
+                <p>Iniciativas nos pilares de educação, saúde, desporto e cultura. Trabalho em equipe, empatia, comunicação e a compreensão do impacto social no desenvolvimento das comunidades.</p>
+              </div>
+            </article>
+
+            <article class="stop">
+              <p class="stop__year">2025</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>jun 2025</span><span>Formação</span></p>
+                <h3>Normas IAS/IFRS</h3>
+                <p class="stop__org">C&amp;S — Assurance and Advisory, SA · Luanda</p>
+                <p>Formação sobre as normas internacionais de contabilidade e os respectivos órgãos de acompanhamento.</p>
+              </div>
+            </article>
+
+            <article class="stop">
+              <p class="stop__year">2026</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>2026 — Presente</span><span>Graduação</span></p>
+                <h3>Ciências Econômicas</h3>
+                <p class="stop__org">Universidade do Vale do Rio dos Sinos (Unisinos)</p>
+                <p>Uma nova etapa no Brasil: teoria econômica, métodos quantitativos e o interesse crescente por economia regional, dados e IA.</p>
+              </div>
+            </article>
+
+            <article class="stop">
+              <p class="stop__year">2026</p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>ago 2026 — Atual</span><span>Destaque</span></p>
+                <h3>Embaixador Estudantil do Google</h3>
+                <p class="stop__org">Programa Embaixadores Estudantis do Google 2026 · Amplifica</p>
+                <p>Selecionado para a rede nacional de lideranças universitárias em inteligência artificial.</p>
+              </div>
+            </article>
+
+            <article class="stop stop--now">
+              <p class="stop__year"><em>Hoje</em></p>
+              <div class="stop__body">
+                <p class="stop__meta"><span>2026 — Atual</span><span>Pesquisa</span></p>
+                <h3>Pesquisador Estagiário</h3>
+                <p class="stop__org">Núcleo de Excelência CEI — Competitividade, Economia Regional e Internacional · Unisinos</p>
+                <p>Pesquisa aplicada sobre competitividade e economia regional e internacional.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="path__progress"><span id="pathBar"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JORNADA (globo) -->
+    <section class="journey" id="jornada">
+      <div class="journey__pin">
+        <div class="journey__visual" data-cursor="Arraste">
+          <canvas id="globe" aria-label="Globo 3D mostrando o caminho de Angola ao Brasil"></canvas>
+          <div class="gl-label" id="glA"><i></i>Angola</div>
+          <div class="gl-label" id="glB"><i></i>Brasil</div>
+        </div>
+
+        <div class="container journey__content">
+          <p class="label label--light">(05) — Jornada</p>
+          <h2 class="journey__title">De Angola<br /><em>ao Brasil.</em></h2>
+
+          <div class="journey__steps">
+            <div class="jstep is-active">
+              <p class="jstep__k">Origem</p>
+              <p>Angola: onde construí a minha base, com formação técnica em Contabilidade e Gestão, o primeiro estágio e anos de voluntariado.</p>
+            </div>
+            <div class="jstep">
+              <p class="jstep__k">Hoje</p>
+              <p>Brasil: graduação em Ciências Econômicas, pesquisa em economia regional e internacional e o programa de Embaixadores do Google.</p>
+            </div>
+          </div>
+
+          <p class="journey__km"><span id="km">0</span> <small>km percorridos</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICAÇÕES (galeria 3D guiada pela rolagem) -->
+    <section class="certs" id="certificacoes">
+      <div class="container">
+        <div class="certs__head">
+          <div>
+            <p class="label">(06) — Certificações</p>
+            <h2 class="section-title">Aprendizado <em>contínuo.</em></h2>
+          </div>
+          <dl class="certs__stats">
+            <div><dd data-count="21">21</dd><dt>certificados</dt></div>
+            <div><dd><span data-count="420">420</span>+</dd><dt>horas de formação</dt></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="showcase" id="showcase">
+        <div class="showcase__pin">
+          <div class="container showcase__top">
+        <div class="tabs" role="tablist" aria-label="Ir para uma categoria">
+          <button class="tab is-active" data-jump="0" data-cat="google">Google <sup>6</sup></button>
+          <button class="tab" data-jump="6" data-cat="tech">IA &amp; Tecnologia <sup>8</sup></button>
+          <button class="tab" data-jump="14" data-cat="unisinos">Unisinos <sup>4</sup></button>
+          <button class="tab" data-jump="18" data-cat="contab">Contabilidade <sup>2</sup></button>
+          <button class="tab" data-jump="20" data-cat="social">Voluntariado <sup>1</sup></button>
+        </div>
+          </div>
+
+          <div class="container showcase__stage">
+            <div class="showcase__info" aria-live="polite">
+              <p class="showcase__count"><span id="scNum">01</span><span class="showcase__total"> / 21</span></p>
+              <div class="showcase__meta" id="scMeta">
+                <p class="showcase__cat" id="scCat"></p>
+                <h3 class="showcase__title" id="scTitle"></h3>
+                <p class="showcase__org" id="scOrg"></p>
+                <p class="showcase__facts"><span id="scDate"></span><span id="scHours"></span></p>
+              </div>
+              <div class="showcase__bar"><span id="scBar"></span></div>
+              <p class="showcase__hint">Role para ver todos os certificados</p>
+            </div>
+
+            <div class="showcase__scene" id="scScene" data-cursor="Role">
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Encontro de Boas-Vindas" data-org="Embaixadores Estudantis do Google · Amplifica" data-date="21 ago 2026" data-hours="1 h">
+              <img src="assets/certificados/google-boas-vindas.jpg" alt="Certificado: Encontro de Boas-Vindas" decoding="async" />
+              <figcaption class="sr-only">Encontro de Boas-Vindas — Embaixadores Estudantis do Google · Amplifica, 21 ago 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Sessão Gemini: Study Notebook" data-org="Embaixadores Estudantis do Google · Amplifica" data-date="28 ago 2026" data-hours="30 min">
+              <img src="assets/certificados/google-study-notebook.jpg" alt="Certificado: Sessão Gemini: Study Notebook" decoding="async" />
+              <figcaption class="sr-only">Sessão Gemini: Study Notebook — Embaixadores Estudantis do Google · Amplifica, 28 ago 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Gemini Canvas com banco de dados" data-org="Embaixadores Estudantis do Google · Amplifica" data-date="04 set 2026" data-hours="30 min">
+              <img src="assets/certificados/google-canvas.jpg" alt="Certificado: Gemini Canvas com banco de dados" decoding="async" />
+              <figcaption class="sr-only">Gemini Canvas com banco de dados — Embaixadores Estudantis do Google · Amplifica, 04 set 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Sessão de Google Gemini 3" data-org="Embaixadores Estudantis do Google · Amplifica" data-date="10 set 2026" data-hours="30 min">
+              <img src="assets/certificados/google-gemini-3.jpg" alt="Certificado: Sessão de Google Gemini 3" decoding="async" />
+              <figcaption class="sr-only">Sessão de Google Gemini 3 — Embaixadores Estudantis do Google · Amplifica, 10 set 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Masterclass #1: Gemini para criação de conteúdo" data-org="Com Otávio Pompeu · Amplifica" data-date="16 set 2026" data-hours="1 h">
+              <img src="assets/certificados/google-masterclass.jpg" alt="Certificado: Masterclass #1: Gemini para criação de conteúdo" decoding="async" />
+              <figcaption class="sr-only">Masterclass #1: Gemini para criação de conteúdo — Com Otávio Pompeu · Amplifica, 16 set 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="google" data-catname="Embaixadores Google" data-title="Conversa com Googler: carreiras na era da IA" data-org="Com Bernardo Barlach · Amplifica" data-date="22 set 2026" data-hours="45 min">
+              <img src="assets/certificados/google-conversa-googler.jpg" alt="Certificado: Conversa com Googler: carreiras na era da IA" decoding="async" />
+              <figcaption class="sr-only">Conversa com Googler: carreiras na era da IA — Com Bernardo Barlach · Amplifica, 22 set 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Curso de Informática" data-org="Academia Multilink Angola · Classificação final 18 valores, Excelente" data-date="mar 2022" data-hours="30 h">
+              <img src="assets/certificados/informatica-multilink.jpg" alt="Certificado: Curso de Informática" decoding="async" />
+              <figcaption class="sr-only">Curso de Informática — Academia Multilink Angola · Classificação final 18 valores, Excelente, mar 2022</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Digitação — Nível Iniciante" data-org="Typing.com · 94% de precisão" data-date="dez 2024" data-hours="14 PPM">
+              <img src="assets/certificados/digitacao-iniciante.jpg" alt="Certificado: Digitação — Nível Iniciante" decoding="async" />
+              <figcaption class="sr-only">Digitação — Nível Iniciante — Typing.com · 94% de precisão, dez 2024</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Digitação — Nível Intermediário" data-org="Typing.com · 42 palavras por minuto, 98% de precisão" data-date="set 2025" data-hours="42 PPM">
+              <img src="assets/certificados/digitacao-intermediario.jpg" alt="Certificado: Digitação — Nível Intermediário" decoding="async" />
+              <figcaption class="sr-only">Digitação — Nível Intermediário — Typing.com · 42 palavras por minuto, 98% de precisão, set 2025</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Produção de Vídeos — Câmeras" data-org="Estudonauta · Módulo 01" data-date="fev 2026" data-hours="20 h">
+              <img src="assets/certificados/video-cameras.jpg" alt="Certificado: Produção de Vídeos — Câmeras" decoding="async" />
+              <figcaption class="sr-only">Produção de Vídeos — Câmeras — Estudonauta · Módulo 01, fev 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Produção de Vídeos — Iluminação" data-org="Estudonauta · Módulo 02" data-date="fev 2026" data-hours="20 h">
+              <img src="assets/certificados/video-iluminacao.jpg" alt="Certificado: Produção de Vídeos — Iluminação" decoding="async" />
+              <figcaption class="sr-only">Produção de Vídeos — Iluminação — Estudonauta · Módulo 02, fev 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Produção de Vídeos — Áudio com Qualidade" data-org="Estudonauta · Módulo 03" data-date="fev 2026" data-hours="20 h">
+              <img src="assets/certificados/video-audio.jpg" alt="Certificado: Produção de Vídeos — Áudio com Qualidade" decoding="async" />
+              <figcaption class="sr-only">Produção de Vídeos — Áudio com Qualidade — Estudonauta · Módulo 03, fev 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Inteligência Artificial — Módulo 01" data-org="Estudonauta · aproveitamento superior a 70%" data-date="mai 2026" data-hours="40 h">
+              <img src="assets/certificados/ia-modulo-01.jpg" alt="Certificado: Inteligência Artificial — Módulo 01" decoding="async" />
+              <figcaption class="sr-only">Inteligência Artificial — Módulo 01 — Estudonauta · aproveitamento superior a 70%, mai 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="tech" data-catname="IA &amp; Tecnologia" data-title="Inteligência Artificial — Módulo 02" data-org="Estudonauta · aproveitamento superior a 70%" data-date="jun 2026" data-hours="40 h">
+              <img src="assets/certificados/ia-modulo-02.jpg" alt="Certificado: Inteligência Artificial — Módulo 02" decoding="async" />
+              <figcaption class="sr-only">Inteligência Artificial — Módulo 02 — Estudonauta · aproveitamento superior a 70%, jun 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="unisinos" data-catname="Unisinos" data-title="Painel: IA e Sala de Aula Pluriversal na Formação em Gestão" data-org="Unisinos · Semana Acadêmica da Escola de Gestão e Negócios" data-date="19 mai 2026" data-hours="2 h">
+              <img src="assets/certificados/unisinos-painel-ia.jpg" alt="Certificado: Painel: IA e Sala de Aula Pluriversal na Formação em Gestão" decoding="async" />
+              <figcaption class="sr-only">Painel: IA e Sala de Aula Pluriversal na Formação em Gestão — Unisinos · Semana Acadêmica da Escola de Gestão e Negócios, 19 mai 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="unisinos" data-catname="Unisinos" data-title="Palestra: Associativismo de Empreendedores" data-org="Unisinos · Semana Acadêmica da Escola de Gestão e Negócios" data-date="19 mai 2026" data-hours="2,5 h">
+              <img src="assets/certificados/unisinos-associativismo.jpg" alt="Certificado: Palestra: Associativismo de Empreendedores" decoding="async" />
+              <figcaption class="sr-only">Palestra: Associativismo de Empreendedores — Unisinos · Semana Acadêmica da Escola de Gestão e Negócios, 19 mai 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="unisinos" data-catname="Unisinos" data-title="Oficina: Abrindo seu negócio, da ideia à formalização" data-org="Unisinos · Semana Acadêmica da Escola de Gestão e Negócios" data-date="20 mai 2026" data-hours="1 h">
+              <img src="assets/certificados/unisinos-abrindo-negocio.jpg" alt="Certificado: Oficina: Abrindo seu negócio, da ideia à formalização" decoding="async" />
+              <figcaption class="sr-only">Oficina: Abrindo seu negócio, da ideia à formalização — Unisinos · Semana Acadêmica da Escola de Gestão e Negócios, 20 mai 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="unisinos" data-catname="Unisinos" data-title="Oficina: Finanças Comportamentais" data-org="Unisinos · Semana Acadêmica da Escola de Gestão e Negócios" data-date="21 mai 2026" data-hours="1 h">
+              <img src="assets/certificados/unisinos-financas.jpg" alt="Certificado: Oficina: Finanças Comportamentais" decoding="async" />
+              <figcaption class="sr-only">Oficina: Finanças Comportamentais — Unisinos · Semana Acadêmica da Escola de Gestão e Negócios, 21 mai 2026</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="contab" data-catname="Contabilidade" data-title="Estágio Curricular Supervisionado" data-org="Hutombelu — Consultoria e Contabilidade · média final de 19 valores" data-date="nov 2022 — fev 2023" data-hours="240 h">
+              <img src="assets/certificados/estagio-hutombelu.jpg" alt="Certificado: Estágio Curricular Supervisionado" decoding="async" />
+              <figcaption class="sr-only">Estágio Curricular Supervisionado — Hutombelu — Consultoria e Contabilidade · média final de 19 valores, nov 2022 — fev 2023</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="contab" data-catname="Contabilidade" data-title="Apresentação das IAS/IFRS e Respectivos Órgãos de Acompanhamento" data-org="C&amp;S — Assurance and Advisory, SA · Luanda" data-date="jun 2025" data-hours="Formação">
+              <img src="assets/certificados/ias-ifrs.jpg" alt="Certificado: Apresentação das IAS/IFRS e Respectivos Órgãos de Acompanhamento" decoding="async" />
+              <figcaption class="sr-only">Apresentação das IAS/IFRS e Respectivos Órgãos de Acompanhamento — C&amp;S — Assurance and Advisory, SA · Luanda, jun 2025</figcaption>
+            </figure>
+            <figure class="sc-card" data-cat="social" data-catname="Voluntariado" data-title="Formação Geral para o Voluntariado" data-org="Fundação BAI · Luanda" data-date="dez 2024" data-hours="Formação">
+              <img src="assets/certificados/fundacao-bai.jpg" alt="Certificado: Formação Geral para o Voluntariado" decoding="async" />
+              <figcaption class="sr-only">Formação Geral para o Voluntariado — Fundação BAI · Luanda, dez 2024</figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS -->
+    <section class="skills" id="competencias">
+      <div class="container">
+        <div class="section-head">
+          <p class="label">(07) — Competências</p>
+          <h2 class="section-title">O que eu levo <em>para cada projeto.</em></h2>
+        </div>
+
+        <ul class="skill-list">
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">01</span>
+              <h3>Economia <em>&amp;</em> Pesquisa</h3>
+              <span class="skill__tags">Big Data · Pesquisa aplicada</span>
+            </div>
+            <div class="skill__more"><p>Interesse em trabalhar com grandes bases de dados: coletar, limpar, organizar e tratar volumes enormes de informação até transformá-los em análises claras. Me fascina descobrir os padrões escondidos nos números e usar a pesquisa aplicada para entender como economias, regiões e organizações se desenvolvem.</p></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">02</span>
+              <h3>Contabilidade <em>&amp;</em> Finanças</h3>
+              <span class="skill__tags">Contabilidade · Finanças de curto e longo prazo</span>
+            </div>
+            <div class="skill__more"><p>Tenho noções básicas de contabilidade e finanças, construídas na formação técnica em Contabilidade e Gestão, no estágio contábil e na formação em normas IAS/IFRS. Hoje, na Unisinos, estou adorando explorar as finanças de curto e de longo prazo com o professor Caciano Gianechini: entender como as decisões financeiras de hoje constroem os resultados de amanhã.</p></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">03</span>
+              <h3>Inteligência Artificial</h3>
+              <span class="skill__tags">Google Gemini · Prompts</span>
+            </div>
+            <div class="skill__more"><p>80 horas de formação em IA e prática com o Google Gemini (Study Notebook, Canvas e criação de conteúdo) como Embaixador Estudantil do Google.</p></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">04</span>
+              <h3>Dados <em>&amp;</em> Tecnologia</h3>
+              <span class="skill__tags">Office · HTML · CSS · JavaScript</span>
+            </div>
+            <div class="skill__more"><p>Pacote Office, informática, digitação a 42 palavras por minuto com 98% de precisão e conhecimentos básicos em HTML, CSS e JavaScript.</p></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">05</span>
+              <h3>Comunicação <em>&amp;</em> Conteúdo</h3>
+              <span class="skill__tags">Vídeo · Câmera · Luz · Áudio</span>
+            </div>
+            <div class="skill__more"><p>60 horas em produção de vídeos (câmeras, iluminação e áudio) e criação de conteúdo com IA para comunicar ideias com clareza.</p></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row">
+              <span class="skill__n">06</span>
+              <h3>Pessoas <em>&amp;</em> Idiomas</h3>
+              <span class="skill__tags">Equipe · Português · Inglês</span>
+            </div>
+            <div class="skill__more"><p>Organização e responsabilidade, facilidade de aprendizagem, trabalho em equipe e empatia. Português fluente e inglês básico (A2).</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="container">
+        <p class="label label--light">(08) — Contato</p>
+        <h2 class="contact__title">
+          <span class="line"><span>Vamos</span></span>
+          <span class="line line--indent"><span><em>conversar.</em></span></span>
+        </h2>
+
+        <a href="mailto:victormuanguvodomingos@gmail.com" class="contact__mail">victormuanguvodomingos@gmail.com</a>
+
+        <div class="contact__grid">
+          <div>
+            <p class="contact__k">Telefone / WhatsApp</p>
+            <a href="https://wa.me/5551995008199" target="_blank" rel="noopener" class="contact__v">(51) 99500-8199</a>
+          </div>
+          <div>
+            <p class="contact__k">Localização</p>
+            <p class="contact__v">São Leopoldo, RS — Brasil</p>
+          </div>
+          <div class="contact__actions">
+            <button class="pill-btn" id="copyEmail" data-magnetic>Copiar email</button>
+            <a href="assets/curriculo-victor-domingos.jpg" download class="pill-btn pill-btn--solid" data-magnetic>Baixar currículo</a>
+          </div>
+        </div>
+
+        <div class="social">
+          <p class="contact__k">Redes sociais</p>
+          <ul class="icon-row icon-row--light icon-row--large" aria-label="Redes sociais">
+            <li><a href="https://www.linkedin.com/in/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="LinkedIn" title="LinkedIn" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Instagram" title="Instagram" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a></li>
+            <li><a href="https://youtube.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="YouTube" title="YouTube" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg></a></li>
+            <li><a href="https://www.tiktok.com/@victormuanguvodomingos" target="_blank" rel="noopener me" aria-label="TikTok" title="TikTok" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg></a></li>
+            <li><a href="https://www.threads.com/@victoremanuelmuanguvodomingos" target="_blank" rel="noopener me" aria-label="Threads" title="Threads" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/></svg></a></li>
+            <li><a href="https://www.facebook.com/share/1DRWDX1MSJ/" target="_blank" rel="noopener me" aria-label="Facebook" title="Facebook" data-magnetic><svg class="ico" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span>© Copyright <span id="year"></span> Victor Muanguvo Domingos. Todos os direitos reservados.</span>
+          <a href="#top">Voltar ao topo ↑</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/city.js"></script>
+  <script src="js/globe.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
